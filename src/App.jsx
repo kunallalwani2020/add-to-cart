@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./Component/Cart";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/add-to-cart/">
       <Header />
       <Routes>
         <Route path="/" element={<ProductList />}></Route>
